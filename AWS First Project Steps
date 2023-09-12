@@ -1,0 +1,14 @@
+First To Create a Aws project production example
+create an VPC with 2 Subnets one is private and public with 2 instances
+after that you want to do the auto scaling in autoscaling create an Template 
+During creation of template we want to mention the instance what we are going to use its definetly an free tier and add an key pair which already we have in local sysytem.
+If there is No Keypair in the System create an ec2 instance first after that create an auto ScalingGroups.
+after Creation of Template next step is going to be creation of auto scaling on the creation of autoscaling mention the private subnet both we have created on the time of VPC Creation.
+after Completion of these all steps create an EC2 instance through that ec2 instance copy the keypair which has given on the time of ec2 instance creation.
+Command:scp -i c:/users/admin/downloads/jen111.pem c:/users/admin/downloads/jen111.pem ubuntu@3.7.73.246:/home/ubuntu. By Using this command we can copy the key pair into the Ec2 Instance.
+after that use the command: ssh -i  c:/users/admin/downloads/jen111.pem ubuntu@3.7.73.246 to log in to the ec2 instance. 
+next step after connecting is check the pem file is copied or not using ls command if copied it is successful.
+Then Select and copy of the private address of any Ec2 instance created through vpc and login in gitbash or any terminal.
+Next configure the load balancer using vpc subnet on the creation of load balancer we want to create a target groups which is used to add the load balancer on the last.
+creating of target groups and configuring that target group in load balancer and creating the load balancer.
+after that the domain in load balancer need to copy and paste on internet to get the output.
